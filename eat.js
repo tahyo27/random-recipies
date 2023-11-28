@@ -1,10 +1,10 @@
 const random = document.getElementById('random');
 const mealsEl = document.getElementById('meals-container');
-const single_mealEl = document.getElementById('single-meal');
+const random_mealEl = document.getElementById('random-meal');
 
 const getRandomMeal = async () => {
     mealsEl.innerHTML = '';
-    single_mealEl.innerHTML = '';
+    random_mealEl.innerHTML = '';
 
     const response = await fetch('https://www.themealdb.com/api/json/v1/1/random.php');
 
@@ -28,9 +28,9 @@ const addMealToDOM = (meal) => {
         }
     }
 
-    single_mealEl.innerHTML = `
+    random_mealEl.innerHTML = `
       <h1>${meal.strMeal}</h1>
-      <div class="single-meal-info">
+      <div class="random-meal-info">
         ${meal.strCategory ? `<p>분류: ${meal.strCategory}</p>` : ''}
         ${meal.strArea ? `<p>국가: ${meal.strArea}</p>` : ''}
       </div>

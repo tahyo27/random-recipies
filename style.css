@@ -14,7 +14,7 @@ a {
     margin-left: 1rem;
 }
 
-.single-meal {
+.random-meal {
     max-width: 800px;
     margin: 0 auto;
     background-color: #fff;
@@ -24,19 +24,19 @@ a {
     margin-top: 20px; 
 }
 
-.single-meal img {
+.random-meal img {
     width: 100%;
     height: auto;
     border-radius: 8px;
     margin-bottom: 20px;
 }
 
-.single-meal h1 {
+.random-meal h1 {
     font-size: 2em;
     margin-bottom: 10px;
 }
 
-.single-meal-info p {
+.random-meal-info p {
     margin: 0;
     font-size: 1.2em;
     color: #555;
